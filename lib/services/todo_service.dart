@@ -12,4 +12,8 @@ class TodoService{
   readTodos() async{
     return await _repository.readData('todos');
   }
+
+  deleteTodo(todoId) async{
+    return await _repository.deleteData('todos', todoId);
+  }
 }
